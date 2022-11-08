@@ -1,0 +1,17 @@
+{
+  "name": "nightwatch-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "^106.0.1",
+    "geckodriver": "^3.2.0",
+    "nightwatch": "^2.4.1"
+  }
+}
