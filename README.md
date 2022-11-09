@@ -28,12 +28,16 @@ npx nightwatch tests/sample.js --env chrome
 
 Run all tests with specific browser
 ```
-npx nightwatch --env chrome   
+npm run test-chrome
+or
+npx nightwatch tests --env chrome   
 ```
 
 Run all tests with several browsers
 ```
-npx nightwatch --env chrome,safari   
+npm run test
+or
+npx nightwatch tests --env chrome,safari   
 ```
 
 ### If You need to install browser drivers:
