@@ -1,0 +1,25 @@
+{
+  "name": "cypress_boilerplate",
+  "version": "1.0.0",
+  "description": "This repo was created to introduce rookies in cypress framework",
+  "main": "index.js",
+  "author": "Eduard Taran",
+  "license": "ISC",
+  "scripts": {
+    "cy:run": "cypress run --env allure=true --reporter mocha-allure-reporter",
+    "clean:folders": "rm -R -f allure-report/* && rm -R -f allure-results/*",
+    "allure:report": "yarn run allure generate allure-results — clean -o allure-report && allure open allure-report",
+    "beforetest": "npm run clean:folders",
+    "tests": "npm run cy:run || npm run aftertest",
+    "aftertest": "npm run allure:report"
+  },
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.38.3",
+    "allure-commandline": "^2.21.0",
+    "cypress": "^9.1.0",
+    "eslint": "^8.37.0",
+    "eslint-plugin-chai-friendly": "^0.7.2",
+    "eslint-plugin-cypress": "^2.13.2",
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}
